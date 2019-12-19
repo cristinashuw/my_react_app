@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
+import SocialProfiles from './SocialProfiles';
+import profile from './assets/profile.png';
 
 class App extends Component {
 
@@ -30,6 +32,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <img src={profile} alt='profile' className="profile"></img>
                 <h1>Hello!</h1>
                 <p>My name is Cristina. I'm a software engineer.</p>
                 <p>I'm always looking forward to work on meaningful projects.</p>
@@ -50,6 +53,8 @@ class App extends Component {
                 }
                 <hr />
                 <Projects />
+                <hr />
+                <SocialProfiles />
             </div>
         )
     }
